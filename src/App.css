@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #2f855a; /* Verde principal */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  text-decoration: none;
+  color: #2f855a; /* Verde principal */
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: block; /* Asegura que cada input se trate como un bloque */
+  margin-left: auto; /* Centra el margen izquierdo */
+  margin-right: auto; /* Centra el margen derecho */
+}
+
+/* Para centrar el botón también */
+button {
+  padding: 10px 20px;
+  background-color: #2f855a;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Asegura que el botón se trate como un bloque */
+  margin-left: auto; /* Centra el margen izquierdo */
+  margin-right: auto; /* Centra el margen derecho */
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #276749;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2f855a;
+  outline: none;
+}
+
+form label {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+  color: #2f855a;
+}
+
+.form-heading {
+  margin-bottom: 20px;
+  text-align: center;
 }

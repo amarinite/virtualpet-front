@@ -1,0 +1,80 @@
+/* PetListPage.css */
+
+.petlist-container {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #c1e1dc,
+    #f7d6e0
+  ); /* Usar un gradiente similar al de PetFormPage */
+  min-height: 100vh;
+}
+
+.heading {
+  margin-bottom: 20px;
+  color: #2f855a; /* Mismo color que en PetFormPage */
+}
+
+.pet-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto; /* Espaciado superior para mayor separación */
+  border-collapse: collapse;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Añadir sombra a la tabla */
+}
+
+.pet-table th,
+.pet-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px; /* Tamaño de fuente consistente */
+}
+
+.pet-table th {
+  background-color: #2f855a; /* Color de encabezado consistente */
+  color: white;
+}
+
+.action-link {
+  margin-right: 10px;
+  color: #276749; /* Color de enlace consistente */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición de color suave */
+}
+
+.action-link:hover {
+  color: #2f855a; /* Cambia a un color más oscuro al pasar el ratón */
+  text-decoration: underline;
+}
+
+.action-btn {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Ajustar padding para mayor comodidad */
+  border-radius: 5px; /* Alinear el borde con el diseño general */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Añadir transformación en hover */
+}
+
+.action-btn:hover {
+  background-color: #c53030;
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.create-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2f855a; /* Usar el mismo color que el botón de PetFormPage */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Añadir transformación en hover */
+}
+
+.create-btn:hover {
+  background-color: #276749; /* Color más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación */
+}

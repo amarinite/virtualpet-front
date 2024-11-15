@@ -1,0 +1,93 @@
+/* LoginPage.css */
+
+body {
+  font-family: "Poppins", sans-serif; /* Nueva fuente */
+  margin: 0; /* Eliminar margen por defecto */
+  padding: 0; /* Eliminar padding por defecto */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #f0f4f8,
+    #c1e1dc
+  ); /* Mejora en el degradado */
+  padding: 20px; /* Espaciado adicional para pantallas pequeñas */
+}
+
+.login-form {
+  background-color: white;
+  padding: 40px; /* Aumento del padding */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-heading {
+  margin-bottom: 24px;
+  font-size: 28px; /* Aumento del tamaño de la fuente */
+  color: #333;
+}
+
+.error-message {
+  color: #e53e3e; /* Color de error más visible */
+  margin-bottom: 20px;
+}
+
+label {
+  display: block; /* Hace que las etiquetas ocupen toda la línea */
+  margin-bottom: 8px; /* Espacio entre etiqueta y campo de entrada */
+  text-align: left; /* Alineación a la izquierda para mayor legibilidad */
+  font-weight: bold; /* Texto en negrita para etiquetas */
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+input:focus {
+  border-color: #2f855a; /* Color del borde al enfocar */
+  box-shadow: 0 0 8px rgba(47, 133, 90, 0.3); /* Sombra al enfocar */
+  outline: none; /* Elimina el contorno por defecto */
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #2f855a; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px; /* Aumento del tamaño de la fuente */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+button:hover {
+  background-color: #276749; /* Color más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+.signup-link {
+  margin-top: 20px; /* Espacio superior para el enlace de registro */
+}
+
+.signup-link a {
+  color: #2f855a; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.signup-link a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}

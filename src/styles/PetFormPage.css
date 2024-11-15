@@ -1,0 +1,56 @@
+/* PetFormPage.css */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #c1e1dc, #f7d6e0);
+}
+
+.pet-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.pet-form h2 {
+  margin-bottom: 20px;
+  color: #2f855a;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  border-color: #2f855a;
+  box-shadow: 0 0 8px rgba(47, 133, 90, 0.2);
+}
+
+.submit-btn {
+  padding: 12px;
+  background-color: #2f855a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #276749;
+}

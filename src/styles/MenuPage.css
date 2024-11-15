@@ -1,0 +1,90 @@
+/* MenuPage.css */
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #c1e1dc);
+  padding: 20px;
+  box-sizing: border-box; /* Para incluir padding en el total de ancho y alto */
+}
+
+.menu-heading {
+  font-size: 2rem; /* Tamaño de fuente adaptable */
+  color: #2f855a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Eliminar márgenes por defecto */
+  width: 100%; /* Tomar el 100% del contenedor */
+  max-width: 400px; /* Limitar el ancho en pantallas grandes */
+}
+
+.menu-list li {
+  margin: 15px 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 1.2rem; /* Tamaño de fuente adaptable */
+  color: #276749;
+  background-color: white;
+  border: 2px solid #2f855a;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: block; /* Para que el enlace ocupe todo el espacio */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.menu-link:hover {
+  background-color: #2f855a;
+  color: white;
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+.menu-logout {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+  font-size: 1.2rem; /* Tamaño de fuente adaptable */
+  display: block;
+}
+
+.menu-logout:hover {
+  background-color: #c53030;
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Media Queries para mejorar la responsividad */
+@media (max-width: 600px) {
+  .menu-heading {
+    font-size: 1.5rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
+  }
+
+  .menu-link {
+    font-size: 1rem; /* Tamaño de fuente más pequeño para enlaces */
+    padding: 10px; /* Ajustar padding */
+  }
+
+  .menu-logout {
+    font-size: 1rem; /* Ajustar tamaño de fuente del botón */
+    padding: 10px; /* Ajustar padding */
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-heading {
+    font-size: 1.2rem; /* Ajustar tamaño de fuente para pantallas más pequeñas */
+  }
+}
